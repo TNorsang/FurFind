@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import MyButt from "./MyButt";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<>{2 == 1 && <App />};</>);
+root.render(<>{2 == 2 && <App />};</>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
