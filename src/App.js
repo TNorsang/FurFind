@@ -1,13 +1,9 @@
-import React from "react";
-import LocalJsonReader from "./LocalJsonReader"; // Adjust the import path as needed
+import logo from "./logo.svg";
+import "./App.css";
+import LocalJsonReader from "./LocalJsonReader";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Local JSON Reader</h1>
-      <LocalJsonReader />
-    </div>
-  );
+  return <LocalJsonReader></LocalJsonReader>;
 }
 
 export default App;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import jsonData from "./data.json";
 
 function LocalJsonReader() {
@@ -6,12 +6,22 @@ function LocalJsonReader() {
 
   return (
     <div>
-      {users.map((user, index) => (
-        <div key={index}>
-          <h2>User {index + 1}</h2>
-          <p>Phone: {user.phone}</p>
-          <p>First Name: {user.FirstName}</p>
-          <p>Last Name: {user.DateTime}</p>
+      {users.map((user, userIndex) => (
+        <div key={userIndex}>
+          <h3>{user.FirstName + " " + user.LastName}</h3>
+          {user.PETS.map((pet, petIndex) => (
+            <div key={`${userIndex}-${petIndex}`}>
+              <p>Description: {pet.Description}</p>
+              <img src={pet.Photo} alt={`Pet ${petIndex}`} />
+              {pet.IsLost && (
+                <p>
+                  {" "}
+                  Last Seen: {pet.LastGeoLocation.Longitude}{" "}
+                  {pet.LastGeoLocation.Latitude}{" "}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
       ))}
     </div>

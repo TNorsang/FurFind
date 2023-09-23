@@ -6,7 +6,7 @@
       "LastName": "Doe",
       "PETS": [
         {
-          "Photo": "pet_photo_url_1.jpg",
+          "Photo": "https://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg",
           "Description": "Cute brown dog",
           "Name": "Buddy",
           "IsLost": false,
@@ -30,10 +30,10 @@
       "LastName": "Smith",
       "PETS": [
         {
-          "Photo": "pet_photo_url_3.jpg",
+          "Photo": "https://www.moneybeach.co.uk/wp-content/uploads/2021/02/1.-Cat-1024x680.jpg",
           "Description": "Black and white dog",
           "Name": "Spot",
-          "IsLost": false,
+          "IsLost": true,
           "LastGeoLocation": {
             "Latitude": 41.8781,
             "Longitude": -87.6298
